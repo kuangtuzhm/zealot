@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.zealot.exception.AppException;
 import com.zealot.orm.model.Pagination;
+import com.zealot.orm.util.Finder;
 
 /**
  * 基础数据库操作类
@@ -180,15 +181,6 @@ public interface BaseDAO<T> {
 	 * @return
 	 * @创建时间 2015-3-5 下午4:11:11
 	 */
-	//public Pagination<T> queryPage(Finder finder, int pageNo, int pageSize) throws AppException;
+	public Pagination<T> queryPage(Finder finder, int pageNo, int pageSize) throws AppException;
 	
-	/**
-	 * 分页查询
-	 * @param finder
-	 * @param pageNo
-	 * @param pageSize
-	 * @return
-	 * @创建时间 2015-3-5 下午4:11:11
-	 */
-	public Pagination<T> queryPage(String hql, int pageNo, int pageSize) throws AppException;
 }

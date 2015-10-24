@@ -8,6 +8,25 @@
   <artifactId>zealot-orm</artifactId>
   <packaging>pom</packaging>
   <name>zealot-orm</name>
+  <dependencyManagement>
+  	<dependencies>
+  	    <dependency>
+	  		<groupId>com.zealot</groupId>
+	  		<artifactId>zealot-core</artifactId>
+	  		<version>${project.parent.version}</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>com.zealot</groupId>
+  			<artifactId>zealot-orm-model</artifactId>
+  			<version>${project.parent.version}</version>
+  		</dependency>
+  		<dependency>
+  		<groupId>com.zealot</groupId>
+  		<artifactId>zealot-exception</artifactId>
+  		<version>${project.parent.version}</version>
+  	</dependency>
+  	</dependencies>
+  </dependencyManagement>
   <build>
     <plugins>
       <plugin>

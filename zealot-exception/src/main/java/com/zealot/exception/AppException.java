@@ -6,13 +6,14 @@ package com.zealot.exception;
  */
 public class AppException extends Exception
 {
+    private static final long serialVersionUID = 1111L;
     
-    /**
-	 * 
-	 */
-	private static final long serialVersionUID = -6613208305497195589L;
-	
-	private String code;
+    private String code;
+    
+    public AppException(String[] errorMessage,Throwable e)
+    {
+        this(errorMessage[0],errorMessage[1],e);
+    }
     
     public AppException(String code,String msg,Throwable e)
     {
