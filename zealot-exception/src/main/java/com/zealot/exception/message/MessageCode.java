@@ -1,4 +1,4 @@
-package com.zealot.common;
+package com.zealot.exception.message;
 
 public class MessageCode {
 	

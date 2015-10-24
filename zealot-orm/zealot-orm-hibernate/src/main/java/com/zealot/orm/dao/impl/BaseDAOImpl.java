@@ -14,8 +14,8 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.zealot.common.MessageCode;
 import com.zealot.exception.AppException;
+import com.zealot.exception.message.MessageCode;
 import com.zealot.orm.dao.BaseDAO;
 import com.zealot.orm.model.Pagination;
 import com.zealot.orm.util.Finder;
