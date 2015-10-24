@@ -11,6 +11,7 @@
 	<slf4j.version>1.6.6</slf4j.version>
 	<log4j.version>1.2.12</log4j.version>
 	<spring.version>4.2.1.RELEASE</spring.version>
+	<lang.version>2.6</lang.version>
   </properties>
   <dependencyManagement>
 	  <dependencies>
@@ -49,6 +50,12 @@
 		    <groupId>org.hibernate</groupId>
 			<artifactId>hibernate-ehcache</artifactId>
 			<version>${hibernate.version}</version>
+		  </dependency>
+		  
+		  <dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>${lang.version}</version>
 		  </dependency>
 		  
 		  <!-- log start -->

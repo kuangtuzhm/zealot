@@ -7,6 +7,25 @@
   </parent>
   <artifactId>zealot-core</artifactId>
   <name>zealot-core</name>
+  
+  <dependencies>
+  	<dependency>
+		<groupId>commons-lang</groupId>
+		<artifactId>commons-lang</artifactId>
+	</dependency>
+	<!-- log start -->
+      
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-log4j12</artifactId>
+    </dependency>
+    <!-- log end -->
+  </dependencies>
+ 
   <build>
     <plugins>
       <plugin>
