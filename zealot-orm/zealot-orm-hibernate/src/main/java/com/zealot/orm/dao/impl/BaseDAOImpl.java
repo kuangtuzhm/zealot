@@ -20,8 +20,6 @@ import com.zealot.orm.dao.BaseDAO;
 import com.zealot.orm.model.Pagination;
 import com.zealot.orm.util.Finder;
 
-
-@Repository("baseDAO")
 @SuppressWarnings("all")
 public class BaseDAOImpl<T> implements BaseDAO<T>
 {

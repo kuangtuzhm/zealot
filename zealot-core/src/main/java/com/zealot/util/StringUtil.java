@@ -894,4 +894,25 @@ public class StringUtil extends StringUtils{
         }
         return null;
     }
+    
+    /**
+     * 获取只是数字的文本
+     * @param text
+     * @return
+     */
+    public static String getNumberStr(String text){
+        if(isNotEmpty(text)){
+            char[] data = text.toCharArray();
+            if(ValidateUtil.isNotEmpty(data)){
+                StringBuilder outStr = new StringBuilder("");
+                for(char c : data){
+                    if(c>='0' && c<='9'){
+                        outStr.append(c);
+                    }
+                }
+                return outStr.toString();
+            }
+        }
+        return text;
+    }
 }
