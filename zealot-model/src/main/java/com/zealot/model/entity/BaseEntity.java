@@ -14,9 +14,9 @@ public class BaseEntity implements Serializable {
 	
 	protected Date updateTime;// 修改日期
 
-	protected String createdBy;// 创建人
+	protected Integer createdBy;// 创建人
 
-	protected String updatedBy;// 修改人
+	protected Integer updatedBy;// 修改人
 
 	public Date getCreateTime() {
 		return createTime;
@@ -34,19 +34,19 @@ public class BaseEntity implements Serializable {
 		this.updateTime = updateTime;
 	}
 
-	public String getCreatedBy() {
+	public Integer getCreatedBy() {
 		return createdBy;
 	}
 
-	public void setCreatedBy(String createdBy) {
+	public void setCreatedBy(Integer createdBy) {
 		this.createdBy = createdBy;
 	}
 
-	public String getUpdatedBy() {
+	public Integer getUpdatedBy() {
 		return updatedBy;
 	}
 
-	public void setUpdatedBy(String updatedBy) {
+	public void setUpdatedBy(Integer updatedBy) {
 		this.updatedBy = updatedBy;
 	}
 }

@@ -183,4 +183,5 @@ public interface BaseDAO<T> {
 	 */
 	public Pagination<T> queryPage(Finder finder, int pageNo, int pageSize) throws AppException;
 	
+	public List<T> queryByExample(T t);
 }

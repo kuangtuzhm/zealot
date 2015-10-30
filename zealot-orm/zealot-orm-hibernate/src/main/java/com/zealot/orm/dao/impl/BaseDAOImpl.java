@@ -7,10 +7,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import org.hibernate.Criteria;
 import org.hibernate.HibernateException;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Example;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -440,5 +442,13 @@ public class BaseDAOImpl<T> implements BaseDAO<T>
             query.setParameter(key.toString(),filterMap.get(key));
         }
 
+    }
+    
+    public List<T> queryByExample(T t)
+    {
+    	Example rightExample = Example.create(t);
+		Criteria criteria = this.getCurrentSession().createCriteria(t.getClass()).add(rightExample);
+		List<T> list = criteria.list();
+		return list;
     }
 }
