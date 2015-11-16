@@ -23,6 +23,8 @@ public class MessageCode {
     
     public final static String [] USER_STOPED={"M1104","用户已经被暂停!"};
     
+    public final static String [] USER_ADMIN_NODELETE={"M1105","超级用户不能被删除!"};
+    
     /**
      * 角色错误
      */
@@ -37,5 +39,12 @@ public class MessageCode {
     /**
      * 权限错误
      */
-    public final static String [] RIGHTS_CODE_EXITS={"M1301","权限编号已经存在!"};
+    public final static String [] RIGHTS_CODE_EXITS={"M1301","菜单编码已经存在!"};
+    
+    /**
+     * 部门错误
+     */
+    public final static String [] DEP_CHILD_EXITS={"M1401","部门下有子部门,不能执行删除操作!"};
+    
+    public final static String [] DEP_USER_EXITS={"M1402","部门下有成员存在,不能执行删除操作!"};
 }
