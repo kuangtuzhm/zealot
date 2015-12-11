@@ -1,0 +1,37 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.zealot</groupId>
+    <artifactId>zealot-boot</artifactId>
+    <version>1.0</version>
+  </parent>
+  <artifactId>zealot-boot-jetty</artifactId>
+  <name>zealot-boot-jetty</name>
+  <build/>
+  
+  <dependencies>
+  	<dependency>
+		<groupId>com.zealot</groupId>
+  		<artifactId>zealot-boot-api</artifactId>
+  		<version>${project.parent.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.eclipse.jetty</groupId>
+		<artifactId>jetty-webapp</artifactId>
+	</dependency>
+	<dependency>
+        <groupId>org.eclipse.jetty</groupId>
+        <artifactId>jetty-jsp</artifactId>
+        <version>8.1.18.v20150929</version>
+    </dependency>
+	<dependency>
+		<groupId>com.zealot</groupId>
+  		<artifactId>zealot-boot-spring</artifactId>
+  		<version>${project.parent.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-web</artifactId>
+	</dependency>
+  </dependencies>
+</project>

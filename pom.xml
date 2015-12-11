@@ -16,6 +16,8 @@
 	<freemarker.version>2.3.23</freemarker.version>
 	<mysql.version>5.1.35</mysql.version>
 	<jackson.version>2.6.0</jackson.version>
+	<jetty.version>8.1.18.v20150929</jetty.version>
+	<zealot.version>1.0</zealot.version>
   </properties>
   <dependencyManagement>
 	  <dependencies>
@@ -166,13 +168,7 @@
 				<version>1.2</version>
 				<scope>provided</scope>
 			</dependency>
-
-			<dependency>
-				<groupId>javax.servlet</groupId>
-				<artifactId>servlet-api</artifactId>
-				<version>2.5</version>
-				<scope>provided</scope>
-			</dependency>
+			
 		  <dependency>
 				<groupId>org.freemarker</groupId>
 				<artifactId>freemarker</artifactId>
@@ -196,6 +192,12 @@
 			  <artifactId>jackson-annotations</artifactId>
 			  <version>${jackson.version}</version>
 			</dependency>
+			
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-webapp</artifactId>
+				<version>${jetty.version}</version>
+			</dependency>
 	  </dependencies>
   </dependencyManagement>
   <build>
@@ -215,5 +217,6 @@
   	<module>zealot-orm</module>
   	<module>zealot-model</module>
   	<module>zealot-web</module>
+  	<module>zealot-boot</module>
   </modules>
 </project>

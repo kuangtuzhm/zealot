@@ -1,13 +1,34 @@
 package com.zealot.common;
 
+import java.util.regex.Pattern;
+
 import org.springframework.beans.factory.BeanFactory;
 
 /**
  * 公用的常量
- * @author tangl
  *
  */
 public final class CommonConsts {
+	
+	public static String SYSTEM_PROPERTY_PATH_KEY = "system.properties.file";
+	
+	public static String DEFAULT_SYSTEM_PROPERTY_PATH = "system.properties";
+	
+	public static final String CONTAINER_KEY = "web.container";
+	
+	public static final String CONTAINER_DEFAULT = "spring";
+	
+	public static final Pattern COMMA_SPLIT_PATTERN                = Pattern
+            .compile("\\s*[,]+\\s*");
+	
+	public static String WEB_PORT="web.port";
+	
+	public static String WEB_PORT_DEFAULT="8080";
+	
+	public static String WEB_CONTEXT="web.context";
+	
+	public static String WEB_CONTEXT_DEFAULT="/";
+	
 	/**spring beanFactory @see CacheSpringBeanFactoryListener**/
 	public static BeanFactory beanFactory;
 	

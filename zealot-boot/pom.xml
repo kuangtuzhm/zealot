@@ -1,0 +1,28 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.zealot</groupId>
+    <artifactId>zealot</artifactId>
+    <version>1.0</version>
+  </parent>
+  <artifactId>zealot-boot</artifactId>
+  <packaging>pom</packaging>
+  <name>zealot-boot</name>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.7</source>
+          <target>1.7</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <modules>
+  	<module>zealot-boot-api</module>
+  	<module>zealot-boot-spring</module>
+  	<module>zealot-boot-jetty</module>
+  	<module>zealot-boot-tomcat</module>
+  </modules>
+</project>
