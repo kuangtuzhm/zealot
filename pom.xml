@@ -18,6 +18,7 @@
 	<jackson.version>2.6.0</jackson.version>
 	<jetty.version>8.1.18.v20150929</jetty.version>
 	<zealot.version>1.0</zealot.version>
+	<dubbo.version>2.5.4-SNAPSHOT</dubbo.version>
   </properties>
   <dependencyManagement>
 	  <dependencies>
@@ -198,6 +199,12 @@
 				<artifactId>jetty-webapp</artifactId>
 				<version>${jetty.version}</version>
 			</dependency>
+			
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>dubbo</artifactId>
+				<version>${dubbo.version}</version>
+			</dependency>
 	  </dependencies>
   </dependencyManagement>
   <build>
@@ -218,5 +225,6 @@
   	<module>zealot-model</module>
   	<module>zealot-web</module>
   	<module>zealot-boot</module>
+  	<module>zealot-distribute</module>
   </modules>
 </project>
