@@ -19,6 +19,8 @@
 	<jetty.version>8.1.18.v20150929</jetty.version>
 	<zealot.version>1.0</zealot.version>
 	<dubbo.version>2.5.4-SNAPSHOT</dubbo.version>
+	<zookeeper.version>3.4.6</zookeeper.version>
+	<zkclient.version>0.1</zkclient.version>
   </properties>
   <dependencyManagement>
 	  <dependencies>
@@ -204,6 +206,17 @@
 				<groupId>com.alibaba</groupId>
 				<artifactId>dubbo</artifactId>
 				<version>${dubbo.version}</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>org.apache.zookeeper</groupId>
+				<artifactId>zookeeper</artifactId>
+				<version>${zookeeper.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.sgroschupf</groupId>
+				<artifactId>zkclient</artifactId>
+				<version>${zkclient.version}</version>
 			</dependency>
 	  </dependencies>
   </dependencyManagement>
