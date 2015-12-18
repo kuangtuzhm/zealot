@@ -11,6 +11,11 @@
   <dependencies>
   	
   	<dependency>
+		 <groupId>junit</groupId>
+		 <artifactId>junit</artifactId>
+	</dependency>
+  	
+  	<dependency>
 		<groupId>com.zealot</groupId>
   		<artifactId>zealot-exception</artifactId>
   		<version>${project.parent.version}</version>

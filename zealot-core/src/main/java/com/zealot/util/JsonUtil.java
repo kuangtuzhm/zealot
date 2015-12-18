@@ -5,6 +5,7 @@ import java.text.SimpleDateFormat;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.fasterxml.jackson.core.JsonParser.Feature;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -16,6 +17,8 @@ public class JsonUtil {
 
 	private final static ObjectMapper mapper = new ObjectMapper();
 	static{
+		//此设置允许属性名没有被双引号引起来，如果不加需要这样{"name":"zzzz"},加了可以{name:"zzzzz"}
+		mapper.configure(Feature.ALLOW_UNQUOTED_FIELD_NAMES, true);
 		mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 		mapper.setDateFormat(new SimpleDateFormat(DateUtil.YYYY_MM_DD_HH_MM_SS));
 	}
